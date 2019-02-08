@@ -1,0 +1,15 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+<%= form_for @post do |f| %>
+    <%= f.label "nombre", :image_url, class: "img" %>
+    <%= f.text_field :image_url, placeholder: "Ingrese su url" %>
+    <%= f.label :text %>
+    <%= f.text_field :text %>
+    <%= f.label :likes %>
+    <%= f.text_field :likes %>
+    <%= f.label :comments %>
+    <%= f.text_area :comments %>
+
+    <%= f.submit "Create" %>
+  <% end %>
